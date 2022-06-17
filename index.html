@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="Li Villaranda" />
+    <title>Hangman Game</title>
+
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+
+    <!-- Li's CSS -->
+    <link href="css/mystyle.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <!-- Removed Navbar Content (But wanted to keep padding)-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <p color="black">Removed (hid?) the content.</p>
+        </div>
+    </nav>
+
+    <!-- HEADER (tweaked from original code) -->
+    <header class="py-5 bg-light border-bottom mb-4">
+        <div class="container">
+            <div class="text-center my-5">
+                <h1 class="fw-bolder">Let's Play Hangman!</h1>
+                <p class="lead mb-0">A Bootstrap 5 starter layout to play Hangman</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Game Section -->
+    <div class="container" float="left">
+
+        <!-- LEFT SIDE -->
+        <!-- <div class="row" float="left"> -->
+
+
+            <!-- Gallows -->
+            <div class="col-md-6" float="left">
+                <div class="card mb-4">
+                    <div class="card-body">
+
+                        <!-- Image-->
+                        <img id="strike-0" float="center">
+                        <img class="strikes" src="images/strike-0.png">
+
+                    </div>
+                </div>
+            </div>
+        <!-- </div> -->
+    </div>
+
+
+
+    <!-- RIGHT SIDE -->
+    <div class="container" float="right">
+        <div class="row" float="right">
+            <div class="col-lg-4" float="right">
+
+                <!-- Guess -->
+                <div class="card mb-4">
+                    <div class="card-header">Enter a Letter</div>
+                    <div id="" class="card-body">
+
+                        <div id="submit-button">
+                            <input class="form-control" type="text" placeholder="Enter a letter..." />
+                            <button class="btn btn-primary" id="submit-button" type="button">Go!</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Word -->
+                <div class="card mb-4">
+                    <div class="card-header">Word</div>
+                    <div class="card-body">
+                        <!-- THIS IS WHERE THE CHOSEN WORD GOES -->
+                        <div id="guessedLetters"></div>
+                    </div>
+                </div>
+
+                <!-- Strikes -->
+                <div class="card mb-4">
+                    <div class="card-header">Strikes</div>
+                    <div class="card-body" id="strike-letters">
+                        <!-- THIS IS WHERE THE WRONG LETTERS GO -->
+                    </div>
+                </div>
+
+                <!-- Right Side Close -->
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Footer-->
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">Li Villaranda</p>
+            <p class="m-0 text-center text-white">&copy; 2022</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+
+    <!-- Hangman JS -->
+    <script src="js/myscript.js"></script>
+
+</body>
+
+</html>
